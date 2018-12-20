@@ -1,0 +1,13 @@
+haeder {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
