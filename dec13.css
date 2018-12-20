@@ -7,4 +7,26 @@ h2 {
 #first-main {
     background: orange;
     text-align: center;
+    color: red;
+    border: 2px solid #243001;
+    padding: 15px 25px 5px 5px;
+}
+
+.green {
+    color: green;
+}
+h2:nth-child(3) a {
+    color: red;
+}
+
+span {
+    color: darkorange;
+}
+
+h2:nth-child(3) span span {
+    color: black;
+}
+
+#first-main, .green {
+    font-style: italic;
 }
