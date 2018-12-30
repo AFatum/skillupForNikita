@@ -7,15 +7,18 @@ haeder {
     justify-content: space-between;
     flex-direction: column;
 }
+#menu-header ul, .header-top {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .header-top {
     display: flex;
     justify-content: space-between;
     /* выравниваем блоки внутри хедера по центру */
     align-items: center;
     flex-direction: row;
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
     /* background: lightgrey; */
     min-height: 80px;
 }
@@ -62,4 +65,75 @@ haeder {
     display: flex;
     text-decoration: none;
     align-items: center;
+}
+#menu-header ul li{
+    /* Убираем маркеры */
+    list-style: none;
+    /* border-right: 2px solid #fff; */
+    /* border-left: 2px solid #fff; */
+}
+#menu-header ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#menu-header {
+    background-color: #4ccfc1;
+    padding: 10px 0;
+    position: relative;
+    box-shadow: 0 2px 1px -2px #193c3854;
+}
+.slider {
+    background: url('img/bg1.png');
+    min-height: 300px;
+}
+#menu-header ul li a{
+    color: #fff;
+    text-decoration: none;
+    border-left: 2px solid #fff;
+    padding: 0 20px 0 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Bebas Neue';
+    font-size: 21px;
+}
+#menu-header ul li:first-child a{
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+#menu-header ul li:last-child a{
+    padding-right: 0;
+}
+/* @font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Thin'), local('BebasNeue-Thin'), url('font-aw/bebas/bebasneuethin.woff2') format('woff2'), url('font-aw/bebas/bebasneuethin.woff') format('woff'), url('font-aw/bebas/bebasneuethin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Light'), local('BebasNeue-Light'), url('font-aw/bebas/bebasneuelight.woff2') format('woff2'), url('font-aw/bebas/bebasneuelight.woff') format('woff'), url('font-aw/bebas/bebasneuelight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Book'), local('BebasNeueBook'), url('font-aw/bebas/bebasneuebook.woff2') format('woff2'), url('font-aw/bebas/bebasneuebook.woff') format('woff'), url('font-aw/bebas/bebasneuebook.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('font-aw/bebas/bebasneueregular.woff2') format('woff2'), url('font-aw/bebas/bebasneueregular.woff') format('woff'), url('font-aw/bebas/bebasneueregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+} */
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('font-aw/bebas/bebasneuebold.woff2') format('woff2'), url('font-aw/bebas/bebasneuebold.woff') format('woff'), url('font-aw/bebas/bebasneuebold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
